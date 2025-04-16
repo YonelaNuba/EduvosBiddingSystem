@@ -13,6 +13,7 @@ namespace Eduvos_Bidding_System.Controllers
             _logger = logger;
         }
 // New comment from GitHub Remote side
+// Estian Comment testing.
         public IActionResult Index()
         {
             return View();
