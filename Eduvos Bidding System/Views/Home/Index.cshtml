@@ -3,58 +3,38 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4">Welcome To The Home Page</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 
 </div>
-@{
-    ViewData["Title"] = "About Page";
-}
-
-<div class="Menu"> @*Sub element menu that acts as a homepage dashboard to make things easier for the user to navigate the homepage*@
+<nav class="navbar">
+    @*Sub element navigation bar that acts as a homepage dashboard to make things easier for the user to navigate the homepage*@
     <ul>
-        <li><a href ="#">HOME</a></li>
+        @*list item elements are created for the bidding system*@
+        <li><a href="#">HOME</a></li>
         <li><a href="#">ABOUT</a></li>
         <li><a href="#">SERVICE</a></li>
         <li><a href="#">CONTACT</a></li>
     </ul>
-</div>
+</nav>
 
-<div class="search"> @*Sub element search bar menu that enables the user to search for computer equipments*@
-    <input class="srch" type ="search" name="" placeholder="Search..." >
-    <a href="#"> <button class="btn"> Search</button></a>
-</div>
-
-<main> @*Main Content of the Homepage*@
-    <aside>@*Consists of the side content that is associated with the bidding system*@
-        <h2> Mission </h2> @*Brief description of the mission of the bidding system*@
-        <p> The mission of the Eduvos Online Bidding System is to create an innovative, fair, and accessible platform for repurposing retired computer equipment.</p>
-    </aside>
-
-    <section> @*This is a depandable sub element that is reliant on the context of the website, it consists of the About Us Page, and the How it Works Page*@
-        <h2> About Us </h2> @*Briefly describes what the bidding system is about*@
-        <p>
-            Welcome to Eduvos Online Bidding Experience!
-
-            Are you looking for excellent tech deals? Look no further! Eduvos is excited to launch its Online Bidding System, a dynamic platform where you may bid, win, and save on high-quality used computer equipment.
-
-            We believe in giving technology a second chance while making it available to those that require it the most. Our open and exciting auction system enables Eduvos to offer available equipment with a starting bid price, allowing clients like you to compete for the best prices in real time.
-        </p>
-    </section>
-
-    <article>@*Represents the dependent and independent content of the bidding system*@
-        <h2> How it Works ? </h2> @*Detailed explaination on how the bidding system works*@
-        <p>
-            Browse and bid on available computer equipment.
-
-            Watch as prices update in real-time—if multiple bids come in, you'll always see the most recent price.
-
-            Get fantastic deals on trustworthy technology!
-
-            Whether you're a student seeking affordable devices or a business seeking cost-effective tech solutions, Eduvos is here to help you find the gear you need at the best price.
-
-            Join the auction, place a bid, and win big on high-end computer equipment!
-        </p>
-    </article>
-
+<main>@*main contents of the home page*@
+    <h3>This is the Home Page Of The Eduvos Bidding System</h3>
+    <p> Eduvos is launching a sophisticated online auction platform to sell its old and outdated computer equipment. 
+        This website enables Eduvos to show available items with starting bid prices, allowing customers such as students, staff members, and educators to submit bids in real time. 
+        Users must first register and log in to participate, ensuring that the bidding process is secure and transparent.
+        If numerous bids are placed on the same item, the system will instantly update the current bid price, keeping buyers informed throughout the auction.</p>
 </main>
+@* Log in and Sign up button creation*@
+<button class="cn"><a href="#>JOIN US"</a></button>
+
+<div class="form">
+    <h2>Log In Here</h2>
+    <input type="email" name="email" placeholder="Enter Your Email Address Here" />@*Enabling the user to login with the use of their email address*@
+    <input type="password" name="" placeholder="Enter Your Password Here" />@*Enabling the user to login with the use of their email address and password*@
+    <button class="btn"><a href="#">Login</a></button>@* Log in button*@
+    
+    <p class="link"> Have not Logged in with us before?</p></br>@* Link to enable the user to Sign up if they have not logged in to the system before*@
+    <a href="#">Sign Up Here</a>
+    <p class="liw">Log In With</p>
+</div>
