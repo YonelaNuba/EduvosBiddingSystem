@@ -33,6 +33,16 @@ namespace Eduvos_Bidding_System.Controllers
             return View();
         }
 
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
+        public IActionResult Auctions()
+        {
+            return View();
+        }
+
         public IActionResult Login()
         {
             return View();
