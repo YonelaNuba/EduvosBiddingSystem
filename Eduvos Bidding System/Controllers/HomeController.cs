@@ -12,22 +12,10 @@ namespace Eduvos_Bidding_System.Controllers
         {
             _logger = logger;
         }
-// New comment from GitHub Remote side
-// Estian Comment testing.
-//Rohern Comment
-//Qhamani Comment
-//Junayde comment
-
         public IActionResult Index()
         {
             return View();
         }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
         public IActionResult About()
         {
             return View();
@@ -43,10 +31,7 @@ namespace Eduvos_Bidding_System.Controllers
             return View();
         }
 
-        public IActionResult Login()
-        {
-            return View();
-        }
+       
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
