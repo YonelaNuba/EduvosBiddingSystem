@@ -8,9 +8,5 @@ namespace Eduvos_Bidding_System.Services
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {
         }
-
-        protected ApplicationDbContext()
-        {
-        }
     }
 }
