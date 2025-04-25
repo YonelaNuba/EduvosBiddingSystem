@@ -2,20 +2,78 @@
     ViewData["Title"] = "Home Page";
 }
 
+<div style="color: navy" class="text-center">
+    <h1 class="display-4" style="font-size: 3rem;
+            margin-bottom: 1rem;
+            color: navy;
+            animation: fadeInDown 1.5s ease-in-out; color: #003366;
+            margin-bottom: 1rem; text-decoration: underline">
+        Welcome To The Eduvos Bidding System
+    </h1>
+    <p style="font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fbfd; font-size: 1.5rem;
+            color: #003366;
+            margin-bottom: 1rem; text-decoration: wavy">Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    
+</div>
 <div class="text-center">
-    <h1 class="display-4">Welcome To The Home Page</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-
+    <main style="display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+            background-color: #ffffff;
+            animation: slideIn 2s ease">@*main contents of the home page*@
+        <section style=" max-width: 500px;
+            padding: 1rem;
+            background-color: #f0f4f8;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1)">
+            <h2 style="color: #003366;
+            margin-bottom: 1rem">
+                What Is A Bidding System?
+            </h2>
+            <p style="color: #333;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px;
+            animation: fadeIn 2s ease-in">
+                A bid is an offer made by an individual or entity to buy products, services, or contracts for a set price.
+                Bids are generally connected with competitive contexts in which numerous parties compete for the same opportunity, with the highest or most advantageous bid typically winning.
+                Online bidding is a web-based tool that enables auctions and bidding via the internet. Buyers can offer items for auction, and bidders can submit bids to win them. 
+                Because there are numerous bidders in an online auction, the person who bids the most amount wins the product.
+            </p>
+        </section>
+        <aside style="background: linear-gradient(to right, #e3f2fd, #bbdefb);
+            padding: 4rem 2rem;
+            text-align: center;
+            animation: fadeInDown 1.5s ease-in-out; font-size: 1.2rem;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto 1.5rem; color: #007bff;
+            text-decoration: none">
+            Eduvos is launching a sophisticated online auction platform to sell its old and outdated computer equipment.
+            This website enables Eduvos to show available items with starting bid prices, allowing customers such as students, staff members, and educators to submit bids in real time.
+            Users must first register and log in to participate, ensuring that the bidding process is secure and transparent.
+            If numerous bids are placed on the same item, the system will instantly update the current bid price, keeping buyers informed throughout the auction.
+            </aside>
+        < img onscroll="C:\Users\Qhamani\Source\Repos\EduvosBiddingSystem\Eduvos Bidding System\Views\Home\Images\online bid.jpg"  alt="Online Bidding System" style:order-radius: 10px;max-width: 100%;height: auto;animation: zoomIn 2s ease"/>
+    </main>
+    @* Log in and Sign up button creation*@
+    <button style="  background-color: darkblue;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            margin-top: 2rem;
+            transition: background-color 0.3s ease" class="btn btn-primary">
+        <a href="#">JOIN US</a>
+    </button>
 </div>
 
-<main>@*main contents of the home page*@
-    <h3>This is the Home Page Of The Eduvos Bidding System</h3>
-    <p> Eduvos is launching a sophisticated online auction platform to sell its old and outdated computer equipment. 
-        This website enables Eduvos to show available items with starting bid prices, allowing customers such as students, staff members, and educators to submit bids in real time. 
-        Users must first register and log in to participate, ensuring that the bidding process is secure and transparent.
-        If numerous bids are placed on the same item, the system will instantly update the current bid price, keeping buyers informed throughout the auction.</p>
-</main>
-@* Log in and Sign up button creation*@
-<button class="btn btn-primary"><a href="#">JOIN US</a></button>
 
 

@@ -3,35 +3,55 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome To The About Page</h1>
+    <h1 style=" color: darkblue" class="display-4">What Is This Bidding System For? </h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
     </div>
     @{
         ViewData["Title"] = "About Page";
     }
 
-    <main>
+<main style=" display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2rem;
+            background-color: #e9ecef;
+            animation: slideIn 1.5s ease-in">
         @*Main Content of the Homepage*@
-        <aside>@*Consists of the side content that is associated with the bidding system*@
-            <h2> Mission </h2> @*Brief description of the mission of the bidding system*@
-            <p> The mission of the Eduvos Online Bidding System is to create an innovative, fair, and accessible platform for repurposing retired computer equipment.</p>
-        </aside>
+    <section style="background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 1rem;
+            padding: 1.5rem;
+            width: 300px;
+            animation: fadeInUp 1s ease-out">
+        @*This is a depandable sub element that is reliant on the context of the website, it consists of the About Us Page, and the How it Works Page*@
+        <h2 style="color: #003366;
+            margin-bottom: 0.75rem">
+            About Us
+        </h2> @*Briefly describes what the bidding system is about*@
+        <p style=" color: #333;
+            line-height: 1.6">
+            Welcome to Eduvos Online Bidding Experience!
 
-        <section>
-            @*This is a depandable sub element that is reliant on the context of the website, it consists of the About Us Page, and the How it Works Page*@
-            <h2> About Us </h2> @*Briefly describes what the bidding system is about*@
-            <p>
-                Welcome to Eduvos Online Bidding Experience!
+            Are you looking for excellent tech deals? Look no further! Eduvos is excited to launch its Online Bidding System, a dynamic platform where you may bid, win, and save on high-quality used computer equipment.
 
-                Are you looking for excellent tech deals? Look no further! Eduvos is excited to launch its Online Bidding System, a dynamic platform where you may bid, win, and save on high-quality used computer equipment.
+            We believe in giving technology a second chance while making it available to those that require it the most. Our open and exciting auction system enables Eduvos to offer available equipment with a starting bid price, allowing clients like you to compete for the best prices in real time.
+        </p>
+    </section>
 
-                We believe in giving technology a second chance while making it available to those that require it the most. Our open and exciting auction system enables Eduvos to offer available equipment with a starting bid price, allowing clients like you to compete for the best prices in real time.
-            </p>
-        </section>
-
-        <article>@*Represents the dependent and independent content of the bidding system*@
-            <h2> How it Works ? </h2> @*Detailed explaination on how the bidding system works*@
-            <p>
+    <article style=" background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 1rem;
+            padding: 1.5rem;
+            width: 300px;
+            animation: fadeInUp 1s ease-out">@*Represents the dependent and independent content of the bidding system*@
+        <h2 style="color: #003366;
+            margin-bottom: 0.75rem">
+            How it Works ?
+        </h2> @*Detailed explaination on how the bidding system works*@
+        <p style=" color: #333;
+            line-height: 1.6">
                 Browse and bid on available computer equipment.
 
                 Watch as prices update in real-time—if multiple bids come in, you'll always see the most recent price.
@@ -43,5 +63,20 @@
                 Join the auction, place a bid, and win big on high-end computer equipment!
             </p>
         </article>
+
+    <aside style=" background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 1rem;
+            padding: 1.5rem;
+            width: 300px;
+            animation: fadeInUp 1s ease-out">@*Consists of the side content that is associated with the bidding system*@
+        <h2 style="color: #003366;
+            margin-bottom: 0.75rem ">
+            Mission
+        </h2> @*Brief description of the mission of the bidding system*@
+        <p style="color: #333;
+            line-height: 1.6"> The mission of the Eduvos Online Bidding System is to create an innovative, fair, and accessible platform for repurposing retired computer equipment.</p>
+    </aside>
 
     </main>
