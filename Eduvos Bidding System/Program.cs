@@ -1,7 +1,16 @@
+using Eduvos_Bidding_System.Services;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews(); 
+builder.Services.AddDbContext<ApplicationDbContext>(options => 
+{
+    var connectionString = builder.Configuration.GetConnectionString("LoginDatabase");
+    options.UseSqlServer();
+}); //connecting to sql server
+
 
 var app = builder.Build();
 
