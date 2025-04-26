@@ -27,6 +27,7 @@ namespace Eduvos_Bidding_System.Controllers
             return View();
         }
 
+        // Prevents access to the auctions page to users with an account
         [Authorize(Roles = "User, Admin")]
         public IActionResult Auctions()
         {

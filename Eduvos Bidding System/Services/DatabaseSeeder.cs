@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 public class DatabaseSeeder
 {
+    // Creates three user roles (Admin, User and Manager)
     public static async Task Initialize(IServiceProvider serviceProvider)
     {
         var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
