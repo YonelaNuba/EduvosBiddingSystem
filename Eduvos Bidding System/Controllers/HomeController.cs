@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Eduvos_Bidding_System.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Eduvos_Bidding_System.Controllers
@@ -26,6 +27,8 @@ namespace Eduvos_Bidding_System.Controllers
             return View();
         }
 
+        // Prevents access to the auctions page to users with an account
+        [Authorize(Roles = "User, Admin")]
         public IActionResult Auctions()
         {
             return View();
