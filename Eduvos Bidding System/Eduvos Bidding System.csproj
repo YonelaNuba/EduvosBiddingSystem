@@ -19,4 +19,9 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\images\eduvos_el_campus.jpg" />
+    <None Include="wwwroot\images\online_bid.jpg" />
+  </ItemGroup>
+
 </Project>
