@@ -18,30 +18,15 @@
                 <span asp-validation-for="Input.Email" class="text-danger"></span>
             </div>
             <div class="form-floating mb-3">
-                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" id="passwordInput" />
+                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
                 <label asp-for="Input.Password">Password</label>
                 <span asp-validation-for="Input.Password" class="text-danger"></span>
             </div>
             <div class="form-floating mb-3">
-                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" id="confirmPasswordInput" />
+                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
                 <label asp-for="Input.ConfirmPassword">Confirm Password</label>
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
-            <div class="mb-3">
-                <input type="checkbox" id="showPasswordCheckbox" onclick="togglePasswordVisibility()"> Show Password
-            </div>
-
-            <script>
-                function togglePasswordVisibility() {
-                    var passwordField = document.getElementById("passwordInput");
-                    var confirmPasswordField = document.getElementById("confirmPasswordInput");
-                    var checkbox = document.getElementById("showPasswordCheckbox");
-
-                    var newType = checkbox.checked ? "text" : "password";
-                    passwordField.type = newType;
-                    confirmPasswordField.type = newType;
-                }
-            </script>
             <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
         </form>
     </div>
@@ -54,7 +39,8 @@
                 {
                     <div>
                         <p>
-                            There are no external authentication services configured yet.
+                            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
+                            about setting up this ASP.NET application to support logging in via external services</a>.
                         </p>
                     </div>
                 }
@@ -79,4 +65,3 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
-
